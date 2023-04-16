@@ -1,0 +1,15 @@
+pool:
+  vmImage: "ubuntu-latest"
+
+variables:
+  - template: confguration.yaml
+
+# whatever else jobs, stages and steps you need to build and deploy your app
+
+steps:
+  - task: AzureAppServiceSettings@1
+    displayName: 'Set App Service Settings'
+    inputs:
+      azureSubscription: $(azureSubscription)
+      appName: $(appName)
+      appSettings: $(app_config)

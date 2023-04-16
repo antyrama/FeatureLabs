@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -14,8 +14,5 @@
 
   <ItemGroup>
     <InternalsVisibleTo Include="CodingLabs.AppServices.Configuration.FunctionalTests" />
-    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
-      <_Parameter1>CodingLabs.AppServices.Configuration.FunctionalTests</_Parameter1>
-    </AssemblyAttribute>
   </ItemGroup>
 </Project>

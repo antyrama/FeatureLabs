@@ -1,26 +1,25 @@
-﻿namespace FeatureLabs.AppServices.Configuration.FunctionalTests.Common
+namespace FeatureLabs.AppServices.Configuration.FunctionalTests.Common;
+
+internal class MappedTestDataBuilderBase<TOptions>
+    where TOptions : class, new()
 {
-    internal class MappedTestDataBuilderBase<TOptions>
-        where TOptions : class, new()
+    private readonly Func<TOptions> _factory;
+
+    protected MappedTestDataBuilderBase(Func<TOptions> factory)
     {
-        private readonly Func<TOptions> _factory;
+        _factory = factory;
+    }
 
-        protected MappedTestDataBuilderBase(Func<TOptions> factory)
+    protected IEnumerable<object[]> Build(params Func<TOptions, List<string>, int>[] configure)
+    {
+        foreach (var func in configure)
         {
-            _factory = factory;
-        }
+            var options = _factory();
+            var errors = new List<string>();
 
-        protected IEnumerable<object[]> Build(params Func<TOptions, List<string>, int>[] configure)
-        {
-            foreach (var func in configure)
-            {
-                var options = _factory();
-                var errors = new List<string>();
-                
-                var count = func(options, errors);
+            var count = func(options, errors);
 
-                yield return new object[] { count, options, errors };
-            }
+            yield return new object[] { count, options, errors };
         }
     }
 }

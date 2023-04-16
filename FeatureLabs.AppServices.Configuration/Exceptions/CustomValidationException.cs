@@ -1,13 +1,12 @@
-﻿namespace FeatureLabs.AppServices.Configuration.Exceptions
-{
-    public class CustomValidationException : ApplicationException
-    {
-        public CustomValidationException(string message, params string[] errorMessages)
-            : base(message)
-        {
-            ErrorMessages = errorMessages;
-        }
+namespace FeatureLabs.AppServices.Configuration.Exceptions;
 
-        public string[] ErrorMessages { get; }
+public class CustomValidationException : ApplicationException
+{
+    public CustomValidationException(string message, params string[] errorMessages)
+        : base(message)
+    {
+        ErrorMessages = errorMessages;
     }
+
+    public string[] ErrorMessages { get; }
 }

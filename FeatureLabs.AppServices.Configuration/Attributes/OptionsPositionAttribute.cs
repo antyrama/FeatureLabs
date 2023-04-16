@@ -1,11 +1,10 @@
-﻿namespace FeatureLabs.AppServices.Configuration.Attributes
+namespace FeatureLabs.AppServices.Configuration.Attributes;
+
+public class OptionsPositionAttribute : Attribute
 {
-    public class OptionsPositionAttribute : Attribute
+    public OptionsPositionAttribute(string position)
     {
-        public OptionsPositionAttribute(string position)
-        {
-            Position = position;
-        }
-        public string Position { get; }
+        Position = position;
     }
+    public string Position { get; }
 }

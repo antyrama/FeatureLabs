@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FeatureLabs.AppServices.Configuration.FunctionalTestsLabs.AppServices.Configuration", "FeatureLabs.AppServices.Configuration.FunctionalTestsLabs.AppServices.Configuration\CodingLabs.AppServices.Configuration.csproj", "{88C5AEB8-396D-4CBD-9C0B-D54DE8E1A489}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FeatureLabs.AppServices.Configuration", "FeatureLabs.AppServices.Configuration\FeatureLabs.AppServices.Configuration.csproj", "{361B0F06-031E-4708-9753-B2FAF726933F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureLabs.AppServices.Configuration.FunctionalTestsLabs.AppServices.Configuration.FunctionalTests", "FeatureLabs.AppServices.Configuration.FunctionalTestsLabs.AppServices.Configuration.FunctionalTests\CodingLabs.AppServices.Configuration.FunctionalTests.csproj", "{EE754DEA-5D70-4364-9D81-C8C4E3FCA6EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FeatureLabs.AppServices.Configuration.FunctionalTests", "FeatureLabs.AppServices.Configuration.FunctionalTests\FeatureLabs.AppServices.Configuration.FunctionalTests.csproj", "{685184AC-4373-44CB-AD43-B48B36E559B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{88C5AEB8-396D-4CBD-9C0B-D54DE8E1A489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{88C5AEB8-396D-4CBD-9C0B-D54DE8E1A489}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{88C5AEB8-396D-4CBD-9C0B-D54DE8E1A489}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{88C5AEB8-396D-4CBD-9C0B-D54DE8E1A489}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EE754DEA-5D70-4364-9D81-C8C4E3FCA6EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE754DEA-5D70-4364-9D81-C8C4E3FCA6EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE754DEA-5D70-4364-9D81-C8C4E3FCA6EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE754DEA-5D70-4364-9D81-C8C4E3FCA6EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{361B0F06-031E-4708-9753-B2FAF726933F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{361B0F06-031E-4708-9753-B2FAF726933F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{361B0F06-031E-4708-9753-B2FAF726933F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{361B0F06-031E-4708-9753-B2FAF726933F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{685184AC-4373-44CB-AD43-B48B36E559B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{685184AC-4373-44CB-AD43-B48B36E559B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{685184AC-4373-44CB-AD43-B48B36E559B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{685184AC-4373-44CB-AD43-B48B36E559B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

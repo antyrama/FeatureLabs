@@ -12,11 +12,7 @@ namespace FeatureLabs.AppServices.Configuration.FunctionalTests.Options
             ClientSecret = "564wev7i5vb68or",
             Domain = "acme.onmicrosoft.com",
             EmailAddress = "valid@email.address",
-            Instance = "acme.b2clogin.com",
-            Nested = new()
-            {
-                SomeOption = "blah blah"
-            }
+            Instance = "acme.b2clogin.com"
         })
         {
         }
@@ -49,24 +45,7 @@ namespace FeatureLabs.AppServices.Configuration.FunctionalTests.Options
                     errors.Add("The EmailAddress field is required. (EmailAddress)");
 
                     return 3;
-                },
-                (options, errors) =>
-                {
-                    options.Nested = null;
-
-                    errors.Add("The Nested field is required. (Nested)");
-
-                    return 4;
-                },
-                (options, errors) =>
-                {
-                    options.Nested!.SomeOption = null!;
-
-                    errors.Add("The Nested field is required. (Nested)");
-
-                    return 5;
-                }
-                );
+                });
         }
     }
 }

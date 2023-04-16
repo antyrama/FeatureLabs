@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CodingLabs.AppServices.Configuration\CodingLabs.AppServices.Configuration.csproj" />
+    <ProjectReference Include="..\FeatureLabs.AppServices.Configuration\FeatureLabs.AppServices.Configuration.csproj" />
   </ItemGroup>
 
 </Project>

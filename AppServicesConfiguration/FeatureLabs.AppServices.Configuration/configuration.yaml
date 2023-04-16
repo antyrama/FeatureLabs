@@ -1,0 +1,13 @@
+variables:
+  app_config: |-
+    [
+      {"name": "AllowedHosts", "value": "*", "slotSetting": false},
+      {"name": "AzureAdB2C__ClientId", "value": "<client id>", "slotSetting": false},
+      {"name": "AzureAdB2C__ClientSecret", "value": "[client secret]", "slotSetting": false},
+      {"name": "AzureAdB2C__Domain", "value": "<your-tenant-name>.onmicrosoft.com", "slotSetting": false},
+      {"name": "AzureAdB2C__EmailAddress", "value": "another@email.address", "slotSetting": false},
+      {"name": "AzureAdB2C__Instance", "value": "https://{your-tenant-name}.b2clogin.com", "slotSetting": false},
+      {"name": "AzureAdB2C__NesetOptions__SomeOption", "value": "blah blah", "slotSetting": false},
+      {"name": "Logging__LogLevel__Default", "value": "Information", "slotSetting": false},
+      {"name": "Logging__LogLevel__Microsoft.AspNetCore", "value": "Warning", "slotSetting": false}
+    ]

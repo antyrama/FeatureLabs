@@ -15,4 +15,10 @@
   <ItemGroup>
     <InternalsVisibleTo Include="CodingLabs.AppServices.Configuration.FunctionalTests" />
   </ItemGroup>
+  
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="dotnet restore" />
+    <Exec Command="dotnet tool restore" />
+    <Exec Command="dotnet tool run app-settings-to-file generate --to-yaml true --file-path-template configuration.yaml --assembly $(OutputPath)\$(AssemblyName).dll " />
+  </Target>
 </Project>

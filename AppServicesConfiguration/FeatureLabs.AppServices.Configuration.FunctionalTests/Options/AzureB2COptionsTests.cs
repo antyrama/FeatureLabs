@@ -17,6 +17,8 @@ public class AzureB2COptionsTests : OverrideOptionsTestsBase<Program, AzureB2COp
         MemberType = typeof(AzureB2COptionsIncorrectDataBuilder))]
     public void ShouldThrowExceptionWhenAppSettingIncorrect(int id, AzureB2COptions options, string[] expectedErrorMessage)
     {
-        Test(id, options, expectedErrorMessage);
+        Test(id, options, expectedErrorMessage) ;
     }
 }
+
+

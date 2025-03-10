@@ -1,0 +1,5 @@
+name: ACME.App
+runtime: dotnet
+description: An example of IaC can be done with Pulumi
+pulumi:autonaming:
+  mode: disabled

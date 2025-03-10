@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FeatureLabs.AppServices.Con
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FeatureLabs.AppServices.Configuration.FunctionalTests", "AppServicesConfiguration\FeatureLabs.AppServices.Configuration.FunctionalTests\FeatureLabs.AppServices.Configuration.FunctionalTests.csproj", "{7629F2DA-F387-4E96-8C28-3418BF402833}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pulumi.IoC", "Pulumi.IoC", "{7291476A-E003-4EDE-9DCC-9B204FBB525F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME.App", "Pulumi\ACME.App.csproj", "{EE41027E-038F-4202-9D89-4492EEE59E8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,10 @@ Global
 		{7629F2DA-F387-4E96-8C28-3418BF402833}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7629F2DA-F387-4E96-8C28-3418BF402833}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7629F2DA-F387-4E96-8C28-3418BF402833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE41027E-038F-4202-9D89-4492EEE59E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE41027E-038F-4202-9D89-4492EEE59E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE41027E-038F-4202-9D89-4492EEE59E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE41027E-038F-4202-9D89-4492EEE59E8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4E929086-50A7-4A3A-9600-E8638A2AF062} = {10142A4D-4FD6-4103-B82A-54192A78E9DB}
 		{7629F2DA-F387-4E96-8C28-3418BF402833} = {10142A4D-4FD6-4103-B82A-54192A78E9DB}
+		{EE41027E-038F-4202-9D89-4492EEE59E8C} = {7291476A-E003-4EDE-9DCC-9B204FBB525F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4F4B5BD1-924A-4BCA-A960-9555BEBB7C1A}

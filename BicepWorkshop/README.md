@@ -4,6 +4,7 @@ To go smoothly with our first Bicep workshop some pre-requisites have to be setu
 
 ## Enable Azure monthly credit
 As Coloumbus employees we have 50$ to utilize on Azure Cloud for our purposes. Go to: https://my.visualstudio.com/Benefits?mkt=en-us, find `Azure 50$ monthly credit` and activate it:
+
 ![](./img/activateAzure.png)
 
 ## Required steps

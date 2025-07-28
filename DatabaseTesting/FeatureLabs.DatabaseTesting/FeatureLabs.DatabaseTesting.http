@@ -1,0 +1,6 @@
+@FeatureLabs.DatabaseTesting_HostAddress = http://localhost:5078
+
+GET {{FeatureLabs.DatabaseTesting_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

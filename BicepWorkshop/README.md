@@ -20,7 +20,9 @@ refreshenv
 choco install azure-cli
 ```
 ### Re-run PowerShell console also with elevated rights and execute
+```
 az login
+```
 ### Followup instructions to get signed in properly
 ### Choose proper subscription when asked
 ![](./img/subscription.png)

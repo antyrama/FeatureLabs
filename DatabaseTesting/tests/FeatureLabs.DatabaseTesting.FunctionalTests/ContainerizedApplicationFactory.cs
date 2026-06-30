@@ -15,8 +15,14 @@ public class ContainerizedApplicationFactory : WebApplicationFactory<IHostMarker
         await _dbContainer.StartAsync();
     }
 
-    public Task DisposeAsync()
+    Task IAsyncLifetime.DisposeAsync()
     {
-        return _dbContainer.StopAsync();
+        return DisposeAsync().AsTask();
+    }
+
+    public override async ValueTask DisposeAsync()
+    {
+        await _dbContainer.StopAsync();
+        await base.DisposeAsync();
     }
 }

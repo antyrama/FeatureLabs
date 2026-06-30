@@ -20,7 +20,7 @@ public class UsersTests(ContainerizedApplicationFactory factory)
 
         var repository = scope.ServiceProvider.GetRequiredService<UsersRepository>();
 
-        var connection = new SqlConnection("Server=localhost;Database=FeatureLabs;User Id=sa;Password=Password1;TrustServerCertificate=True;");
+        var connection = new SqlConnection("Server=localhost,1433;Database=FeatureLabs;User Id=sa;Password=Password1;TrustServerCertificate=True;");
         await connection.OpenAsync();
 
         var reSpawner = await Respawner.CreateAsync(connection, new RespawnerOptions

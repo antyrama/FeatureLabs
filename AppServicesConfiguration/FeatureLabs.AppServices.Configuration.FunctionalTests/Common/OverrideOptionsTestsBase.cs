@@ -3,6 +3,7 @@ using FeatureLabs.AppServices.Configuration.Exceptions;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Xunit.Abstractions;
 
 namespace FeatureLabs.AppServices.Configuration.FunctionalTests.Common;
@@ -20,13 +21,13 @@ public class OverrideOptionsTestsBase<TStartup, TOptions> : IClassFixture<WebApp
     {
         _factory = factory;
         _outputHelper = outputHelper;
-        _mapper = new MapperConfiguration(cfg => cfg.CreateMap<TOptions, TOptions>())
+        _mapper = new MapperConfiguration(cfg => cfg.CreateMap<TOptions, TOptions>(), new LoggerFactory())
             .CreateMapper();
     }
 
     protected void Test(int id, TOptions options, string[] expectedErrorMessages)
     {
-        _outputHelper.WriteLine($"Parameter set with id = {0}", id);
+        _outputHelper.WriteLine($"Parameter set with id = {id}");
 
         var ex = Assert.Throws<CustomValidationException>(() =>
         {

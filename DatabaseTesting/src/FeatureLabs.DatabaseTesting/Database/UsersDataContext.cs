@@ -6,11 +6,13 @@ namespace FeatureLabs.DatabaseTesting.Database;
 public class UsersDataContext(DbContextOptions<UsersDataContext> options)
     : DbContext(options), IUsersDataContext
 {
+    public DbContextOptions<UsersDataContext> Options { get; } = options;
+
     public DbSet<UserEntity> Users { get; set; }
 
-    public Task MigrateAsync()
+    public async Task MigrateAsync()
     {
-        return Database.MigrateAsync();
+        await Database.MigrateAsync();
     }
 }
 
